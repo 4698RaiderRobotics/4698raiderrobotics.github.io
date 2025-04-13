@@ -1,0 +1,16 @@
+title: Team 4698 | Raider Robotics
+# uncomment baseurl if you want to publish the site to a subfolder
+# baseurl: ""
+
+description: >- # this means to ignore newlines until "baseurl:"
+  First Robotics Competition Team 4698 FRC FRC4698
+  Team 4698 Raider Robotics is the FRC Robotics Team at Rio Americano High School
+  located in Sacramento, CA.
+
+plugins :
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+- README.md
