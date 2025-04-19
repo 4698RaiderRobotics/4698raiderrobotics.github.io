@@ -1,0 +1,23 @@
+#
+# Carousel image information.
+#
+# include in a page with:
+#   {% include carousel.html section="main" %}
+#
+# section contain:
+#
+# img:  path-to-image-file
+# caption:  Caption to put at the bottom of the image or "" to omit
+#
+
+main:
+- img: /img/home/1_orig.jpg
+  caption: ""
+- img: /img/home/2_orig.jpg
+  caption: "2018 World Championships"
+- img: /img/home/3_orig.jpg
+  caption: "Match About to Start"
+
+competition1:
+- img: /img/home/1_orig.jpg
+  caption: "Bad Link...."

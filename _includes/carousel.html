@@ -1,0 +1,38 @@
+<!-- 
+    pass in include.section as the name of the carousel.yml section to use for images and captions.
+-->
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+  {% for item in site.data.carousel[include.section] %}
+    <button type="button" data-bs-target="#myCarousel" 
+                data-bs-slide-to="{% increment slide_count %}" 
+                {% if forloop.index0 == 0 %} class="active" {% endif %} 
+                aria-current="true" aria-label="Slide {{ slide_count }}"></button>
+  {% endfor %}
+  </div>
+  <div class="carousel-inner">
+    {% for item in site.data.carousel[include.section] %}
+      <div class="carousel-item {% if forloop.index0 == 0 %} active {% endif %}">
+        <img src="{{ item.img }}" class="d-block w-100" alt="...">
+        {% if item.caption != "" %}
+          <div class="container">
+            <div class="carousel-caption">
+              <span class="badge bg-success small">{{ item.caption }}</span>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+      
