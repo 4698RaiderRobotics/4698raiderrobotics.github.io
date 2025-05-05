@@ -1,0 +1,23 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+@use "sass:color";
+
+$RAHSgreen: #007A33;
+
+$light-green: color.scale($RAHSgreen, $lightness: 10%);
+
+.btn-4698green {
+    font-weight: 600;
+    color: var(--bs-white);
+    border-color: $RAHSgreen;
+    background-color: $RAHSgreen;
+
+    &:hover {
+        color: var(--bs-white);
+        background-color: $light-green;
+        border-color: $light-green;
+    }
+}
+  

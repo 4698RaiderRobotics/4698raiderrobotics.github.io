@@ -11,13 +11,13 @@
 #
 
 main:
-- img: /img/home/1_orig.jpg
+- img: /assets/images/home/1_orig.jpg
   caption: ""
-- img: /img/home/2_orig.jpg
+- img: /assets/images/home/2_orig.jpg
   caption: "2018 World Championships"
-- img: /img/home/3_orig.jpg
+- img: /assets/images/home/3_orig.jpg
   caption: "Match About to Start"
 
 competition1:
-- img: /img/home/1_orig.jpg
+- img: /assets/images/home/1_orig.jpg
   caption: "Bad Link...."
